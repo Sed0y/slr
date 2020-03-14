@@ -20,7 +20,7 @@
 
    <div class="box">
 
-      <div class="title">ЦПМ</div>
+      <div class="title">Solaris</div>
 	  <div class="invisible" id="message"></div>
 
       <div class="input">

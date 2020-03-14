@@ -1,14 +1,14 @@
 package main
 
 import (
-	"dpm/controllers"
-	_ "dpm/routers"
+	"solaris/controllers"
+	_ "solaris/routers"
 
 	"github.com/astaxie/beego"
 
 	"database/sql"
-	"dpm/conf"
-	"dpm/models"
+	"solaris/conf"
+	"solaris/models"
 
 	"fmt"
 	"log"

@@ -1,8 +1,8 @@
 package migration
 
 import (
-	conf "dpm/conf"
 	"log"
+	conf "solaris/conf"
 
 	_ "github.com/lib/pq"
 )

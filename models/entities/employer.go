@@ -1,7 +1,7 @@
 package entities
 
 import (
-	"dpm/conf"
+	"solaris/conf"
 	//	"fmt"
 	"log"
 	"strconv"

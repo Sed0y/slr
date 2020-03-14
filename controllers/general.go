@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"dpm/models"
+	"solaris/models"
 )
 
 var App *models.Application

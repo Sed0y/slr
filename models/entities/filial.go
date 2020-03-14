@@ -2,9 +2,9 @@ package entities
 
 import (
 	"database/sql"
-	"dpm/conf"
 	"fmt"
 	"log"
+	"solaris/conf"
 	"strconv"
 
 	_ "github.com/lib/pq"

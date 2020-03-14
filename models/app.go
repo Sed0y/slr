@@ -1,11 +1,11 @@
 package models
 
 import (
-	conf "dpm/conf"
-	logger "dpm/models/activity"
-	en "dpm/models/entities"
-	migration "dpm/models/migration"
-	solaris "dpm/models/solaris"
+	conf "solaris/conf"
+	logger "solaris/models/activity"
+	en "solaris/models/entities"
+	migration "solaris/models/migration"
+	solaris "solaris/models/solaris"
 )
 
 type Application struct {

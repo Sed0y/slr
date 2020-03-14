@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"dpm/controllers"
+	"solaris/controllers"
 
 	"github.com/astaxie/beego"
 )

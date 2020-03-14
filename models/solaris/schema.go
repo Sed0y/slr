@@ -1,7 +1,7 @@
 package solaris
 
 import (
-	conf "dpm/conf"
+	conf "solaris/conf"
 	//	"encoding/base64"
 	"fmt"
 	"io/ioutil"

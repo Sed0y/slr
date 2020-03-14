@@ -1,8 +1,8 @@
 package activity
 
 import (
-	"dpm/conf"
 	"fmt"
+	"solaris/conf"
 	"strconv"
 )
 

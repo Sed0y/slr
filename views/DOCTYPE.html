@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 3 - Демо валидации формы</title>
+    <!-- Bootstrap -->
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Заголовок модального окна -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+            </div>
+            <!-- Основная часть модального окна, содержащая форму для регистрации -->
+            <div class="modal-body">
+                <!-- Форма для регистрации -->
+                <form role="form" class="form-horizontal">
+                    <!-- Блок для ввода логина -->
+                    <div class="form-group has-feedback">
+                        <label for="login" class="control-label col-xs-3">Логин:</label>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" required="required" name="login" pattern="[A-Za-z]{6,}">
+                            </div>
+                            <span class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <!-- Блок для ввода email -->
+                    <div class="form-group has-feedback">
+                        <label for="email" class="control-label col-xs-3">Email:</label>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="email" class="form-control" required="required" name="email">
+                            </div>
+                            <span class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <!-- Конец блока для ввода email-->
+                </form>
+            </div>
+            <!-- Нижняя часть модального окна -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                <button id="save" type="button" class="btn btn-primary">Регистрация</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="alert alert-success hidden" id="success-alert">
+        <h2>Успех</h2>
+        <div>Ваши данные были успешно отправлены.</div>
+    </div>
+    <!-- Кнопка для открытия модального окна -->
+    <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+        Регистрация
+    </button>
+</div>
+
+<!-- jQuery -->
+<script src="/examples/vendors/jquery/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap -->
+<script src="/examples/vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    $(function() {
+        //при нажатии на кнопку с id="save"
+        $('#save').click(function() {
+            //переменная formValid
+            var formValid = true;
+            //перебрать все элементы управления input
+            $('input').each(function() {
+                //найти предков, которые имеют класс .form-group, для установления success/error
+                var formGroup = $(this).parents('.form-group');
+                //найти glyphicon, который предназначен для показа иконки успеха или ошибки
+                var glyphicon = formGroup.find('.form-control-feedback');
+                //для валидации данных используем HTML5 функцию checkValidity
+                if (this.checkValidity()) {
+                    //добавить к formGroup класс .has-success, удалить has-error
+                    formGroup.addClass('has-success').removeClass('has-error');
+                    //добавить к glyphicon класс glyphicon-ok, удалить glyphicon-remove
+                    glyphicon.addClass('glyphicon-ok').removeClass('glyphicon-remove');
+                } else {
+                    //добавить к formGroup класс .has-error, удалить .has-success
+                    formGroup.addClass('has-error').removeClass('has-success');
+                    //добавить к glyphicon класс glyphicon-remove, удалить glyphicon-ok
+                    glyphicon.addClass('glyphicon-remove').removeClass('glyphicon-ok');
+                    //отметить форму как невалидную
+                    formValid = false;
+                }
+            });
+            //если форма валидна, то
+            if (formValid) {
+                //скрыть модальное окно
+                $('#myModal').modal('hide');
+                //отобразить сообщение об успехе
+                $('#success-alert').removeClass('hidden');
+                $('#success-alert').removeClass('hidden');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>							
+
+							

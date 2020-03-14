@@ -1,0 +1,90 @@
+#DetailsTable span{
+	cursor: pointer;
+}
+
+#DetailsTable span:hover{
+	color: #bb5353;
+	text-decoration: underline;
+}
+
+#myTab a {
+	color: #808080;
+}
+
+#myTab a.active {
+	color: #576a73;
+	font-weight:500;
+}
+
+#person form #surname,
+#person form #name,
+#person form #fathername,
+#person form #birthdate
+{
+	font-weight:normal;
+	color: #000;
+	background-color: #f5f9fb;
+}
+
+#vehicle form #vin,
+#vehicle form #gos
+{
+	font-weight:normal;
+	color: #000;
+	background-color: #f5f9fb;
+}
+
+#company form #inn
+{
+	font-weight:normal;
+	color: #000;
+	background-color: #f5f9fb;
+}
+
+#DetailsTable td {
+	padding: 3px;
+	padding-left: 9px;
+}
+
+#DetailsTable thead {
+	font-weight: bold;	
+	color: #575757;
+}
+
+#ItemDetails .card-part-header {
+	padding: 7px;
+	padding-left: 12px;
+	border-bottom: solid 1px #cecece;
+	border-top: solid 1px #cecece;
+	background-color: #f7f7f7;
+	margin-top: 5px;
+	color: #4c5269;
+}
+
+#ItemDetails .card-part-header i {
+	margin-right: 8px;
+}
+
+#ItemDetails .card-part-content{
+	padding: 12px;
+	
+}
+
+#ItemDetails .card-part-content label{
+	color:#383838;
+	margin-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

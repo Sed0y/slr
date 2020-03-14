@@ -1,0 +1,206 @@
+
+
+#solaris_person form #solaris_surname,
+#solaris_person form #solaris_name,
+#solaris_person form #solaris_fathername,
+#solaris_person form #solaris_birthdate_day,
+#solaris_person form #solaris_birthdate_month,
+#solaris_person form #solaris_birthdate_year,
+#solaris_person form #solaris_inn
+{
+	font-weight:normal;
+	color: #000;
+	background-color: #f5f9fb;
+	line-height: 1.5;
+	padding: 7px;
+	height: 40px;
+}
+
+#SolarisResultTable table {
+	background-color: #fffdf5;
+	/*width: 100%;*/
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: solid 0px #333;
+}
+
+#SolarisResultTable table thead{
+	
+	border-bottom: solid 2px #8e8e8e;
+}
+
+
+#SolarisResultTable table thead tr{
+	
+}
+
+#SolarisResultTable table thead tr th{
+	padding-left: 12px;
+	color: #353535;
+}
+
+#SolarisResultTable table thead tr th.base-name{
+	background-color: #435363;
+	padding: 6px;
+	padding-left: 12px;
+	color: #fdfdfd;
+	text-shadow: -1px -1px #151c23;
+}
+
+#SolarisResultTable table tbody{
+	border-top: solid 1px #000;	
+	
+}
+#SolarisResultTable table tbody tr.odd{
+	background-color: #ffffff;	
+}
+
+#SolarisResultTable table tbody tr.even{
+	background-color: #ebf6fb;
+}
+
+#SolarisResultTable table tbody tr.to_referat{
+	background-color:#a5a5a5;
+	
+}
+
+
+#SolarisResultTable table tbody tr td{
+	padding-left: 12px;
+	padding-right: 12px;
+	color:#000;
+}
+
+#SolarisResultTable table tbody tr td.field{
+	border-right: 1px solid #848484;
+	color:#464646;
+}
+
+#RequestParameters {
+	border: solid 1px #bfab66;	
+	background-color:#fffee3;
+	/*text-shadow: -1px -1px #ffdf79;*/
+}
+
+#RequestParameters table {
+	width: 95%;
+}
+
+#RequestParameters .req_label {
+	color:#6b6144;	
+	font-size: 0.85rem;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.25; 
+	/*text-shadow: -1px -1px #ffdf79;*/
+}
+
+#RequestParameters .req_value {
+	color:#22265f;
+	padding-left: 7px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.25; 
+	font-size: 1rem;
+}
+
+#RequestParameters .req_clear {
+	text-align: right;	
+	font-size: 1.25rem;
+	color:#bda559;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.25; 
+	cursor: pointer;	
+}
+
+#RequestParameters .req_clear:hover{
+	
+	color:#ff4c4c;
+	text-shadow: -1px -1px #ea3300;	
+}
+
+#CleanRequestParameters {
+	float: right;
+	color: #807b06;
+	cursor: pointer;
+	text-shadow: -1px -1px #fffdce;
+	
+}
+
+#CleanRequestParameters:hover {
+	text-decoration: underline;
+	
+}
+
+
+
+
+
+.add_value_buttom {
+	margin: 0px;
+	padding: 0px;
+	background-color:#f0f9ef;
+	border: solid 1px #a6bdab;
+	text-align: center;
+	margin-left: -20px;
+}
+
+.add_value_buttom span {
+
+	color: #6dbb60;
+	width: 100%;
+	font-size: 1.5rem;
+	cursor: pointer;	
+}
+
+.add_value_buttom span:hover {
+	color: #2cf50b;
+}
+
+
+
+#solaris_documantation {
+	background-color:#fdfeff;
+	border: solid 1px #dcdcdc;
+	color:#484a4a;
+}
+
+#WaitTable {
+	width: 95%;
+}
+
+#WaitTable td {
+	
+	color: #6f7275;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	text-align:center;
+}
+
+#WaitTable td i {
+	color: #0f80b9;
+}
+
+#solaris_person .ClearForm {
+	cursor: pointer;
+	color: #ad3f3f;
+}
+
+#solaris_person .ClearForm:hover{
+	text-decoration: underline;
+}
+
+#solaris_person form .form-group {
+	margin-bottom: 0.5rem;
+}
+
+#solaris_person form button {
+	background-color: #528ed6;
+}
+
+
+
+
+
+
